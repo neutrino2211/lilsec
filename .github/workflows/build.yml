@@ -34,5 +34,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: mainasara.dev
           REMOTE_USER: root
-          TARGET: /root/lilsec.mainasara.dev
+          TARGET: /var/www/lilsec.mainasara.dev
             
