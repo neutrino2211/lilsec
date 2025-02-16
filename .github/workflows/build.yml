@@ -35,5 +35,3 @@ jobs:
           REMOTE_HOST: mainasara.dev
           REMOTE_USER: root
           TARGET: /root/lilsec.mainasara.dev
-          
-            
