@@ -37,5 +37,5 @@ jobs:
           REMOTE_USER: root
           TARGET: /root/lilsec.mainasara.dev
           SCRIPT_BEFORE: pm2 stop lilsec || true # This should be allowed to fail
-          SCRIPT_AFTER: cd lilsec.mainasara.dev/dist && pm2 start /root/.bun/bin/bun --name lilsec -- --env-file $HOME/.env/lilsec.env /root/lilsec.mainasara.dev/dist/lilsec.js
+          SCRIPT_AFTER: cd /root/lilsec.mainasara.dev/dist && pm2 start /root/.bun/bin/bun --name lilsec -- --env-file $HOME/.env/lilsec.env lilsec.js
             
