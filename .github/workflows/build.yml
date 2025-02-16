@@ -36,6 +36,6 @@ jobs:
           REMOTE_HOST: mainasara.dev
           REMOTE_USER: root
           TARGET: /root/lilsec.mainasara.dev
-          SCRIPT_BEFORE: mv /root/lilsec.mainasara.dev/dist/lilsec.js /root/lilsec.mainasara.dev/lilsec.js && pm2 stop lilsec || true # This should be allowed to fail
-          SCRIPT_AFTER: cd lilsec.mainasara.dev && pm2 start /root/.bun/bin/bun --name lilsec -- --env-file $HOME/.env/lilsec.env lilsec.js
+          SCRIPT_BEFORE: pm2 stop lilsec || true # This should be allowed to fail
+          SCRIPT_AFTER: cd lilsec.mainasara.dev/dist && pm2 start /root/.bun/bin/bun --name lilsec -- --env-file $HOME/.env/lilsec.env lilsec.js
             
