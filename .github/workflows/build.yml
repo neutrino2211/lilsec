@@ -26,7 +26,7 @@ jobs:
           bun-version: latest
       - run: mkdir dist
       - run: bun i
-      - run: bun build index.html --outdir dist
+      - run: bun run build
       - name: Deploy to lilsec.mainasara.dev
         uses: easingthemes/ssh-deploy@main
         with:
