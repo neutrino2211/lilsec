@@ -20,7 +20,6 @@ export const skills = {
         "PostgreSQL",
         "Docker",
         "AWS",
-        "Azure",
         "GCP",
         "CI/CD",
         "Git",
